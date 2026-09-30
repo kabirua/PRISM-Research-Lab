@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="PRISM Lab — Predictive Research in Intelligent Systems and Modeling at West Virginia State University.">
+  <title>PRISM Lab | West Virginia State University</title>
+
+  <style>
+    :root {
+      --navy: #061327;
+      --blue: #0755e9;
+      --cyan: #19b9ff;
+      --text: #14213a;
+      --muted: #556176;
+      --light: #f3f7fc;
+      --border: #dfe7f1;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.65;
+      background: white;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--cyan);
+      outline-offset: 5px;
+    }
+    .container { width: min(1180px, 90%); margin: auto; }
+
+    /* Navigation */
+    header {
+      background: var(--navy);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .brand:hover { text-decoration: none; }
+    .brand-symbol {
+      font-size: 40px;
+      color: var(--cyan);
+      line-height: 1;
+    }
+    .brand strong {
+      display: block;
+      font-size: 26px;
+      letter-spacing: 3px;
+      line-height: 1.1;
+    }
+    .brand small {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 7px;
+      text-align: center;
+    }
+    .desktop-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    .desktop-links a, .mobile-menu a {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .desktop-links a:hover { color: var(--cyan); }
+    .mobile-menu { display: none; }
+    .skip-link {
+      position: absolute;
+      left: 12px;
+      top: -60px;
+      background: white;
+      padding: 10px;
+    }
+    .skip-link:focus { top: 8px; z-index: 20; }
+
+    /* Hero */
+    .hero {
+      background:
+        radial-gradient(circle at 80% 45%, #e7efff, transparent 45%),
+        linear-gradient(135deg, white, #f7faff);
+      overflow: hidden;
+    }
+    .hero-layout {
+      min-height: 430px;
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      align-items: center;
+      gap: 35px;
+      padding: 55px 0;
+    }
+    .eyebrow {
+      color: var(--blue);
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    h1 {
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 1.05;
+      margin: 12px 0;
+      color: var(--navy);
+      letter-spacing: -2px;
+    }
+    .subtitle {
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 1.4;
+      color: var(--blue);
+      margin: 16px 0;
+    }
+    .hero p { max-width: 500px; color: var(--muted); }
+    .buttons { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 25px; }
+    .button {
+      display: inline-block;
+      padding: 11px 22px;
+      border-radius: 5px;
+      background: var(--blue);
+      border: 1px solid var(--blue);
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .button:hover { background: #003fc1; text-decoration: none; }
+    .button.outline { background: white; color: var(--blue); }
+    .button.outline:hover { background: #eaf1ff; }
+    .hero-art svg { display: block; width: 100%; height: auto; }
+
+    /* Sections and cards */
+    section { padding: 55px 0; }
+    .section-title {
+      margin: 0 0 30px;
+      text-align: center;
+      color: var(--navy);
+      font-size: 24px;
+    }
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 44px;
+      height: 3px;
+      margin: 12px auto 0;
+      background: var(--blue);
+    }
+    .section-intro {
+      max-width: 720px;
+      text-align: center;
+      color: var(--muted);
+      margin: -10px auto 30px;
+    }
+    .grid { display: grid; gap: 22px; }
+    .grid-six { grid-template-columns: repeat(6, 1fr); }
+    .grid-four { grid-template-columns: repeat(4, 1fr); }
+    .grid-three { grid-template-columns: repeat(3, 1fr); }
+    .research-item { text-align: center; }
+    .research-icon { font-size: 36px; color: var(--blue); }
+    .research-item h3 {
+      color: var(--blue);
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .research-item p { font-size: 13px; color: var(--muted); }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 4px 16px #06132708;
+    }
+    .card-art {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+    }
+    .green { background: linear-gradient(135deg, #d8f3df, #9bcab0); }
+    .sky { background: linear-gradient(135deg, #d8eaff, #91b6e6); }
+    .purple { background: linear-gradient(135deg, #e9ddff, #bd9aeb); }
+    .gold { background: linear-gradient(135deg, #fff0cc, #e9cd85); }
+    .card-body { padding: 22px; }
+    .card h3 { font-size: 17px; margin: 0 0 10px; }
+    .card p { color: var(--muted); font-size: 14px; }
+    .card a { font-size: 14px; font-weight: bold; }
+    .soft { background: var(--light); }
+
+    /* News */
+    .news-strip { background: #edf3ff; padding: 22px 0; }
+    .news-layout {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 25px;
+      align-items: center;
+    }
+    .news-label { color: var(--blue); font-weight: bold; font-size: 14px; }
+    .news-items { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+    .news-items p { margin: 0; font-size: 14px; }
+
+    /* Resources and people */
+    .resource-card { padding: 26px; background: #f5f7fb; }
+    .resource-card .icon { font-size: 32px; }
+    .person-role { color: var(--blue); font-size: 13px; font-weight: bold; }
+    .person-avatar {
+      width: 62px;
+      height: 62px;
+      background: #e8efff;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--blue);
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .publication {
+      border-left: 3px solid var(--blue);
+      padding: 8px 0 8px 20px;
+      margin-bottom: 24px;
+    }
+    .publication h3 { margin: 0 0 8px; font-size: 18px; }
+    .publication p { margin: 5px 0; color: var(--muted); }
+    .join-box {
+      background: var(--navy);
+      color: white;
+      border-radius: 12px;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+    .join-box h2 { margin: 0 0 10px; }
+    .join-box p { margin: 0; color: #d6dfef; max-width: 700px; }
+    .join-box .button { flex-shrink: 0; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    footer { background: var(--navy); color: #cbd5e6; padding: 32px 0; }
+    .footer-layout {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    footer p { margin: 5px 0; font-size: 13px; }
+    footer a { color: #72caff; }
+
+    @media (max-width: 1000px) {
+      .desktop-links { gap: 12px; }
+      .desktop-links a { font-size: 12px; }
+      .grid-six { grid-template-columns: repeat(3, 1fr); }
+      .grid-four { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 720px) {
+      html { scroll-padding-top: 80px; }
+      .desktop-links { display: none; }
+      .mobile-menu { display: block; }
+      .mobile-menu summary { cursor: pointer; padding: 10px; }
+      .mobile-links {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: var(--navy);
+        padding: 15px 5%;
+        display: grid;
+        gap: 14px;
+        border-top: 1px solid #263449;
+      }
+      .hero-layout { grid-template-columns: 1fr; gap: 10px; padding: 40px 0; }
+      .hero-art { max-width: 500px; margin: auto; }
+      .subtitle { font-size: 20px; }
+      .news-layout, .news-items { grid-template-columns: 1fr; gap: 14px; }
+      .grid-three, .contact-grid { grid-template-columns: 1fr; }
+      .join-box { flex-direction: column; align-items: flex-start; padding: 28px; }
+      section { padding: 40px 0; }
+    }
+
+    @media (max-width: 440px) {
+      .grid-six, .grid-four { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="PRISM Lab home">
+        <span class="brand-symbol" aria-hidden="true">△</span>
+        <span><strong>PRISM</strong><small>LAB</small></span>
+      </a>
+
+      <nav class="desktop-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#people">People</a>
+        <a href="#publications">Publications</a>
+        <a href="#resources">Resources</a>
+        <a href="#news">News</a>
+        <a href="#join">Join Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <details class="mobile-menu">
+        <summary>Menu ☰</summary>
+        <nav class="mobile-links" aria-label="Mobile navigation">
+          <a href="#home">Home</a>
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+          <a href="#people">People</a>
+          <a href="#publications">Publications</a>
+          <a href="#resources">Resources</a>
+          <a href="#news">News</a>
+          <a href="#join">Join Us</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-layout">
+        <div>
+          <div class="eyebrow">West Virginia State University</div>
+          <h1>PRISM LAB</h1>
+          <div class="subtitle">
+            Predictive Research in Intelligent<br>
+            Systems &amp; Modeling
+          </div>
+          <p>
+            We develop trustworthy AI, computer vision, and intelligent
+            sensing technologies to address challenges in agriculture,
+            healthcare, and the environment.
+          </p>
+          <div class="buttons">
+            <a class="button" href="#research">Discover Our Research</a>
+            <a class="button outline" href="#resources">Explore Resources</a>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <!-- Built-in vector illustration; no image upload needed. -->
+          <svg viewBox="0 0 650 380" role="img"
+               aria-labelledby="prism-title">
+            <title id="prism-title">
+              A beam of light entering a prism and emerging as a rainbow
+            </title>
+            <defs>
+              <linearGradient id="prism-left" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#7188a9"/>
+                <stop offset="0.55" stop-color="#1c2d47"/>
+                <stop offset="1" stop-color="#061327"/>
+              </linearGradient>
+              <linearGradient id="prism-right" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#324966"/>
+                <stop offset="1" stop-color="#020815"/>
+              </linearGradient>
+              <radialGradient id="glow">
+                <stop offset="0" stop-color="white"/>
+                <stop offset="0.3" stop-color="#d6eaff" stop-opacity="0.8"/>
+                <stop offset="1" stop-color="#d6eaff" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <ellipse cx="325" cy="325" rx="160" ry="17"
+                     fill="#071a38" opacity="0.08"/>
+            <path d="M325 40 L170 305 L325 332 Z"
+                  fill="url(#prism-left)" stroke="#64748b"/>
+            <path d="M325 40 L465 303 L325 332 Z"
+                  fill="url(#prism-right)" stroke="#25374e"/>
+            <path d="M325 40 L325 332" stroke="#89a5ca"
+                  stroke-opacity="0.45"/>
+
+            <path d="M8 220 L302 169" stroke="#cbd5e1" stroke-width="9"/>
+            <path d="M8 220 L302 169" stroke="white" stroke-width="4"/>
+
+            <polygon points="302,169 640,80 640,103" fill="#ef233c"/>
+            <polygon points="302,169 640,103 640,126" fill="#ff8c00"/>
+            <polygon points="302,169 640,126 640,149" fill="#ffd600"/>
+            <polygon points="302,169 640,149 640,172" fill="#43b02a"/>
+            <polygon points="302,169 640,172 640,195" fill="#00b4d8"/>
+            <polygon points="302,169 640,195 640,218" fill="#2555db"/>
+            <polygon points="302,169 640,218 640,241" fill="#7928ca"/>
+
+            <circle cx="302" cy="169" r="55" fill="url(#glow)"/>
+            <circle cx="302" cy="169" r="6" fill="white"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="news-strip">
+      <div class="container news-layout">
+        <div class="news-label">LATEST NEWS</div>
+        <div class="news-items">
+          <!-- Edit these announcements as needed. -->
+          <p>
+            <strong>Research update</strong><br>
+            Explore our tomato drought assessment code and RGB masks.
+          </p>
+          <p>
+            <strong>Student research</strong><br>
+            Building datasets for plant stress analysis and biomass prediction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="container">
+        <h2 class="section-title">Research Areas</h2>
+        <div class="grid grid-six">
+          <div class="research-item">
+            <div class="research-icon" aria-hidden="true">◎</div>
+            <h3>Artificial Intelligence</h3>
+            <p>Machine learning, deep learning, and intelligent systems.</p>
+          </div>
+          <div class="research-item">
+            <div class="research-icon" aria-hidden="true">◉</div>
+            <h3>Computer Vision</h3>
+            <p>Image classification, segmentation, and visual analysis.</p>
+          </div>
+          <div class="research-item">
+            <div class="research-icon" aria-hidden="true">⌁</div>
+            <h3>Intelligent Sensing</h3>
+            <p>UAV, spectral, thermal, and multimodal sensing.</p>
+          </div>
+          <div class="research-item">
+            <div class="research-icon" aria-hidden="true">◇</div>
+            <h3>Trustworthy AI</h3>
+            <p>Robustness, explainability, and adversarial risk analysis.</p>
+          </div>
+          <div class="research-item">
+            <div class="research-icon" aria-hidden="true">▥</div>
+            <h3>Data Science &amp; Modeling</h3>
+            <p>Predictive analytics and data-driven scientific modeling.</p>
+          </div>
+          <div class="research-item">
+            <div class="research-icon" aria-hidden="true">♧</div>
+            <h3>Digital Agriculture</h3>
+            <p>AI for plant health, phenotyping, and crop monitoring.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="soft">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="grid grid-four">
+          <article class="card">
+            <div class="card-art green" aria-hidden="true">🌱</div>
+            <div class="card-body">
+              <h3>Tomato Drought Assessment</h3>
+              <p>
+                Vis–NIR modeling for drought detection, alongside
+                independent RGB canopy stress analysis.
+              </p>
+              <a href="https://github.com/PRISM-Research-Lab/Tomato-Drought-Impact-Assessment">
+                Explore Code →
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-art sky" aria-hidden="true">🛩️</div>
+            <div class="card-body">
+              <h3>UAV Crop Monitoring</h3>
+              <p>
+                Computer vision and aerial imaging for crop health
+                monitoring and plant disease detection.
+              </p>
+              <a href="#contact">Ask About This Research →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-art purple" aria-hidden="true">🛡️</div>
+            <div class="card-body">
+              <h3>Robust Plant Disease AI</h3>
+              <p>
+                Transfer learning for plant disease classification
+                with adversarial risk analysis.
+              </p>
+              <a href="https://www.biorxiv.org/content/10.64898/2026.05.13.724946v1">
+                Read Preprint →
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-art gold" aria-hidden="true">📊</div>
+            <div class="card-body">
+              <h3>RGB Traits &amp; Biomass</h3>
+              <p>
+                Developing image datasets to explore relationships
+                between canopy traits, drought stress, and biomass.
+              </p>
+              <a href="#contact">Discuss Collaboration →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <div class="container">
+        <h2 class="section-title">Open Research Resources</h2>
+        <div class="grid grid-four">
+          <article class="card resource-card">
+            <div class="icon" aria-hidden="true">🗂️</div>
+            <h3>Data &amp; Masks</h3>
+            <p>RGB segmentation masks and dataset information.</p>
+            <a href="https://github.com/PRISM-Research-Lab/Tomato-Drought-Impact-Assessment">
+              Explore Resources →
+            </a>
+          </article>
+
+          <article class="card resource-card">
+            <div class="icon" aria-hidden="true">💻</div>
+            <h3>Software &amp; Tools</h3>
+            <p>Research code for modeling and canopy stress estimation.</p>
+            <a href="https://github.com/PRISM-Research-Lab/Tomato-Drought-Impact-Assessment">
+              Explore Code →
+            </a>
+          </article>
+
+          <article class="card resource-card">
+            <div class="icon" aria-hidden="true">📘</div>
+            <h3>Segmentation Tutorial</h3>
+            <p>Instructions for creating plant image masks with ilastik.</p>
+            <a href="https://github.com/PRISM-Research-Lab/ilastik-mask-creation-tutorial">
+              View Tutorial →
+            </a>
+          </article>
+
+          <article class="card resource-card">
+            <div class="icon" aria-hidden="true">🔗</div>
+            <h3>Lab GitHub</h3>
+            <p>Browse our repositories, documentation, and research tools.</p>
+            <a href="https://github.com/PRISM-Research-Lab">
+              Visit GitHub →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="people" class="soft">
+      <div class="container">
+        <h2 class="section-title">Our People</h2>
+        <p class="section-intro">
+          Faculty and students working together on AI, sensing,
+          and applications in agriculture.
+        </p>
+
+        <!-- Replace initials with photographs later if desired. -->
+        <div class="grid grid-three">
+          <article class="card card-body">
+            <div class="person-avatar">KH</div>
+            <h3>Dr. Kabir Hossain</h3>
+            <div class="person-role">Principal Investigator</div>
+            <p>
+              Assistant Professor of Computer Science<br>
+              West Virginia State University
+            </p>
+          </article>
+
+          <article class="card card-body">
+            <div class="person-avatar">NC</div>
+            <h3>Natwange Chiwele</h3>
+            <div class="person-role">Student Researcher</div>
+            <p>Plant disease detection and trustworthy AI.</p>
+          </article>
+
+          <article class="card card-body">
+            <div class="person-avatar">ES</div>
+            <h3>Eddie Sweeney</h3>
+            <div class="person-role">Student Researcher</div>
+            <p>Computer vision and plant disease model benchmarking.</p>
+          </article>
+
+          <article class="card card-body">
+            <div class="person-avatar">LK</div>
+            <h3>Luice Khamboo</h3>
+            <div class="person-role">Student Researcher</div>
+            <p>Plant image segmentation and canopy stress analysis.</p>
+          </article>
+
+          <article class="card card-body">
+            <div class="person-avatar">ZW</div>
+            <h3>Zichun (Tom) Wang</h3>
+            <div class="person-role">Student Researcher</div>
+            <p>AI and data-driven agricultural research.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="container">
+        <h2 class="section-title">Selected Research</h2>
+
+        <!-- Add complete citations and publication links here. -->
+        <article class="publication">
+          <h3>
+            LeafyVGG-16: Transfer Learning for Plant Disease
+            Detection with Cyber Risk Analysis
+          </h3>
+          <p>N. Chiwele, E. Sweeney, and K. Hossain.</p>
+          <p>Preprint available on bioRxiv.</p>
+          <a href="https://www.biorxiv.org/content/10.64898/2026.05.13.724946v1">
+            Read Paper →
+          </a>
+        </article>
+
+        <article class="publication">
+          <h3>
+            Drought-Spec-Net: Early Tomato Drought Detection and
+            Potential Yield-Impact Assessment Using Vis–NIR Data
+          </h3>
+          <p>
+            Research on spectral drought detection and exploratory
+            potential yield-impact indicators.
+          </p>
+          <a href="https://github.com/PRISM-Research-Lab/Tomato-Drought-Impact-Assessment">
+            Research Code &amp; Resources →
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="join" class="soft">
+      <div class="container">
+        <div class="join-box">
+          <div>
+            <h2>Interested in Our Research?</h2>
+            <p>
+              Students and collaborators interested in AI, computer vision,
+              intelligent sensing, and digital agriculture are welcome to
+              contact Dr. Hossain to discuss research opportunities.
+            </p>
+          </div>
+          <a class="button" href="mailto:kabir.hossain@wvstateu.edu">
+            Get in Touch →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <div>
+            <h3>PRISM Lab</h3>
+            <p>
+              Department of Mathematics, Engineering and Computer Science<br>
+              West Virginia State University<br>
+              721 Wallace Hall<br>
+              Institute, WV 25112-1000, USA
+            </p>
+          </div>
+          <div>
+            <h3>Connect With Us</h3>
+            <p>
+              Email:
+              <a href="mailto:kabir.hossain@wvstateu.edu">
+                kabir.hossain@wvstateu.edu
+              </a>
+            </p>
+            <p>
+              GitHub:
+              <a href="https://github.com/PRISM-Research-Lab">
+                PRISM-Research-Lab
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-layout">
+      <div>
+        <strong>PRISM LAB</strong>
+        <p>Predictive Research in Intelligent Systems &amp; Modeling</p>
+        <p>© <span id="year">2026</span> PRISM Lab.</p>
+      </div>
+      <div>
+        <a href="#home">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Close the mobile menu after selecting a section.
+    const mobileMenu = document.querySelector(".mobile-menu");
+    document.querySelectorAll(".mobile-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.open = false;
+      });
+    });
+  </script>
+</body>
+</html>
