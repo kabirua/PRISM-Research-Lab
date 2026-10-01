@@ -213,13 +213,6 @@ window.LAB_DATA = {
       "enabled": true
     },
     {
-      "name": "National Science Foundation",
-      "description": "",
-      "image": "images/nsf.png",
-      "url": "https://www.nsf.gov/",
-      "enabled": false
-    }
-    {
       "name": "WV StaR",
       "description": "Science, Technology and Research (STaR) ",
       "image": "images/star.png",
