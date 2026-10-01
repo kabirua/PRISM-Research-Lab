@@ -1,13 +1,6 @@
 /* Add new publications at the top of this list. */
 window.LAB_RESEARCH = [
   {
-    "title": "Plant Phenomics—the unrecognized rise of a scientific discipline",
-    "description": "Alexander Bucksch, Yong S. Chung, Jennifer L. Clarke, Stephan Gerth, Philipp von Gillhaussen, Wei Guo, Jana Kholová, Shree Pariyar, Ethan Pickering, Sindhuja Sankaran, Sahameh Shafiee, Sergio Alan Cervantes-Perez, Stijn Dhondt, Zhiguo Han, Kabir Hossain, William LaVoy, Jonathan P. Lynch, Sónia Negrão, Tony Pridmore, Hannah Schneider, Stefan Schwartz, Ian Stavness, Shangpeng Sun, Vincent Vadez, Lee West, and Rick van de Zedde. Trends in Plant Science, 2026. Journal article.",
-    "image": "",
-    "url": "https://doi.org/10.1016/j.tplants.2026.08.001",
-    "linkText": "View paper →"
-  },
-  {
     "title": "DIRTNet: Enabling root phenotyping with fiber Bragg grating sensors",
     "description": "Kabir Hossain, Steven Binder, Mable Fok, and Alexander Bucksch. Computers and Electronics in Agriculture, under review, 2026. Preprint available on bioRxiv.",
     "image": "",
@@ -26,6 +19,13 @@ window.LAB_RESEARCH = [
     "description": "N. Chiwele, E. Sweeney, and K. Hossain. Accepted at the IEEE Global Humanitarian Technology Conference (GHTC), 2026. Preprint available on bioRxiv.",
     "image": "",
     "url": "https://www.biorxiv.org/content/10.64898/2026.05.13.724946v1.full.pdf",
+    "linkText": "View paper →"
+  },
+    {
+    "title": "Plant Phenomics—the unrecognized rise of a scientific discipline",
+    "description": "Alexander Bucksch, Yong S. Chung, Jennifer L. Clarke, Stephan Gerth, Philipp von Gillhaussen, Wei Guo, Jana Kholová, Shree Pariyar, Ethan Pickering, Sindhuja Sankaran, Sahameh Shafiee, Sergio Alan Cervantes-Perez, Stijn Dhondt, Zhiguo Han, Kabir Hossain, William LaVoy, Jonathan P. Lynch, Sónia Negrão, Tony Pridmore, Hannah Schneider, Stefan Schwartz, Ian Stavness, Shangpeng Sun, Vincent Vadez, Lee West, and Rick van de Zedde. Trends in Plant Science, 2026. Journal article.",
+    "image": "",
+    "url": "https://doi.org/10.1016/j.tplants.2026.08.001",
     "linkText": "View paper →"
   },
   {
