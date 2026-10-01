@@ -470,4 +470,13 @@ Then open:
 http://localhost:8000
 ```
 
-JavaScript must be enabled to display the editable collections.
+JavaScript must be enabled to display the editable collections. 
+
+## Copyright
+
+© 2026 PRISM Lab. All rights reserved.
+
+Reuse of original website text, design, and photographs requires permission.
+Third-party materials remain subject to their respective licenses.
+
+For permission, contact kabir.hossain@wvstateu.edu.
