@@ -32,14 +32,31 @@
     }
     return box;
   }
-  function addLink(parent, item) {
-    let url = safeUrl(item.url);
+function addLink(parent, item) {
+  const links = Array.isArray(item.links)
+    ? item.links
+    : [{ url: item.url, linkText: item.linkText }];
+
+  const container = el('div', 'profile-links');
+  container.style.display = 'flex';
+  container.style.flexWrap = 'wrap';
+  container.style.gap = '12px';
+
+  links.forEach(link => {
+    let url = safeUrl(link.url);
     if (!url) return;
-    if (page !== 'home' && url.startsWith('#')) url = 'index.html' + url;
-    const a = el('a', '', item.linkText || 'Learn more →');
+
+    if (page !== 'home' && url.startsWith('#')) {
+      url = 'index.html' + url;
+    }
+
+    const a = el('a', '', link.linkText || 'Learn more →');
     a.href = url;
-    parent.append(a);
-  }
+    container.append(a);
+  });
+
+  if (container.childElementCount) parent.append(container);
+}
   function card(item, type) {
     const article = el('article', type === 'research' ? 'publication' : type === 'areas' ? 'research-item' : 'card');
     if (type === 'news') {
