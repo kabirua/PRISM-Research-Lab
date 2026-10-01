@@ -479,4 +479,4 @@ JavaScript must be enabled to display the editable collections.
 Reuse of original website text, design, and photographs requires permission.
 Third-party materials remain subject to their respective licenses.
 
-For permission, contact kabir.hossain@wvstateu.edu.
+For permission, contact kabircnu@gmail.com / kabir.hossain@wvstateu.edu
