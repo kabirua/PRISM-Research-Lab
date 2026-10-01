@@ -333,4 +333,5 @@ time { display:block; color:var(--muted); font-size:12px; }
 .funder > a, .funder > a > div { display: block; width: 100%; min-width: 0; }
 .funder img {width: 230px; max-width: 100%; height: 130px; padding: 12px; object-fit: contain;}
 .funder small { max-width: 100%; overflow-wrap: anywhere; }
+.funder img {background: transparent;padding: 0;}
 
