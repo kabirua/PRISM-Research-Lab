@@ -137,7 +137,7 @@ window.LAB_DATA = {
       "role": "Principal Investigator",
       "group": "Principal Investigator",
       "description": "Assistant Professor of Computer Science West Virginia State University",
-      "image": "",
+      "image": "images/kabir.jpg",
       "initials": "KH",
       "year": "",
       "position": "",
