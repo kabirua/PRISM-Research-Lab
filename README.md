@@ -45,7 +45,7 @@ For later updates, upload or edit only the files you changed.
 | Our People and Alumni | `data.js` |
 | Selected Research / Publications | `research-data.js` |
 | Latest News | `data.js` |
-| Gallery photos and captions | `gallery-data.js` |
+| Gallery photos and captions | `gallery-data.js, and upload photo inside images\galary` |
 | Research Support / Funding | `data.js` |
 | Homepage introduction, Contact, or Join Us text | `index.html` |
 | Main layout, colors, spacing, and image sizes | `styles.css` |
