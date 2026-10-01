@@ -8,11 +8,25 @@ window.LAB_DATA = {
     "projects": 3
   },
   "news": [
+        {
+      "date": "2026-09-26",
+      "title": "Drought-Spec-Net submitted to Scientific Reports",
+      "description": "Our study on early tomato drought detection and potential yield-impact assessment using Vis–NIR data has been submitted to Scientific Reports.",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.24.754113v2",
+      "linkText": "Read the preprint →"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "DIRTNet submitted to Computers and Electronics in Agriculture",
+      "description": "Our study on root phenotyping using fiber Bragg grating sensors and deep learning has been submitted to Computers and Electronics in Agriculture.",
+      "url": "https://doi.org/10.64898/2026.09.22.753535",
+      "linkText": "Read the preprint →"
+    },
     {
       "date": "",
       "title": "Research update",
       "description": "Explore our tomato drought assessment code and RGB masks.",
-      "url": ""
+      "url": "https://github.com/PRISM-Research-Lab/Tomato-Drought-Impact-Assessment"
     },
     {
       "date": "",
