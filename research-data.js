@@ -11,15 +11,31 @@ window.LAB_RESEARCH = [
     "title": "Drought-Spec-Net: Early Tomato Drought Detection and Potential Yield-Impact Assessment Using Vis–NIR Data",
     "description": "Kabir Hossain, Aniruddha Maiti, Karthik Chinnannan, Padma Nimmakayala, Eddie Sweeney, Zichun Wang, Natwange Chiwele, Luice Khamboo, Lakshmi Meghana Nallagari, and Alexander Bucksch. Scientific Reports, under review, 2026. Preprint available on bioRxiv.",
     "image": "",
-    "url": "https://www.biorxiv.org/content/10.64898/2026.09.24.754113v2",
-    "linkText": "View preprint →"
+  "links": [
+    {
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.24.754113v2",
+      "linkText": "View preprint →"
+    },
+    {
+      "url": "https://github.com/PRISM-Research-Lab/Tomato-Drought-Impact-Assessment",
+      "linkText": "GitHub code →"
+    }
+  ]
   },
   {
     "title": "LeafyVGG-16: Transfer Learning for Plant Disease Detection with Cyber Risk Analysis",
     "description": "N. Chiwele, E. Sweeney, and K. Hossain. Accepted at the IEEE Global Humanitarian Technology Conference (GHTC), 2026. Preprint available on bioRxiv.",
     "image": "",
+    "links": [
+  {
     "url": "https://www.biorxiv.org/content/10.64898/2026.05.13.724946v1.full.pdf",
-    "linkText": "View paper →"
+    "linkText": "View preprint →"
+  },
+  {
+    "url": "https://github.com/PRISM-Research-Lab/LeafyVGG-16-GHTC-26-",
+    "linkText": "GitHub code →"
+  }
+]
   },
     {
     "title": "Plant Phenomics—the unrecognized rise of a scientific discipline",
