@@ -141,8 +141,16 @@ window.LAB_DATA = {
       "initials": "KH",
       "year": "",
       "position": "",
-      "url": "https://sites.google.com/view/hossaink/cv",
-      "linkText": "View CV →"
+      "links": [
+        {
+          "url": "https://sites.google.com/view/hossaink/cv",
+          "linkText": "View CV →"
+        },
+        {
+          "url": "https://YOUR-PERSONAL-WEBSITE-URL",
+          "linkText": "Personal Website →"
+        }
+      ]
     },
     {
       "name": "Natwange Chiwele",
