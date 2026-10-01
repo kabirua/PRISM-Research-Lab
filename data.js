@@ -215,7 +215,7 @@ window.LAB_DATA = {
     {
       "name": "WV StaR",
       "description": "Science, Technology and Research (STaR) ",
-      "image": "",
+      "image": "images/star.png",
       "url": "https://wvresearch.org/",
       "enabled": true
     }
