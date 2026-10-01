@@ -198,4 +198,20 @@ window.LAB_DATA = {
     }
   ],
   "research": window.LAB_RESEARCH,
+  "funders": [
+  {
+    "name": "USDA–NIFA",
+    "description": "Evans–Allen research support",
+    "image": "images/USDA_NIFA.jpeg",
+    "url": "https://www.nifa.usda.gov/",
+    "enabled": true
+  },
+  {
+    "name": "WV STaR",
+    "description": "Instrumentation support",
+    "image": "images/star.png",
+    "url": "https://wvresearch.org/",
+    "enabled": true
+  }
+]
 };
