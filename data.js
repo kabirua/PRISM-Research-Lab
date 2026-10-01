@@ -77,7 +77,7 @@ window.LAB_DATA = {
       "description": "Computer vision and aerial imaging for crop health monitoring and plant disease detection.",
       "icon": "🛩️",
       "color": "sky",
-      "image": "images/Crop_monitoring.PNG",
+      "image": "images/Crop_monitoring.png",
       "url": "#contact",
       "linkText": "Ask About This Research →"
     },
