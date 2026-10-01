@@ -45,20 +45,20 @@ window.LAB_DATA = {
     },
     {
       "title": "Intelligent Sensing & Plant Phenotyping",
-      "description": "Combining UAV imaging, RGB and thermal cameras, Vis–NIR spectroscopy, and fiber optic sensors to measure plant traits and monitor above- and below-ground development.",
+      "description": "Combining imaging, spectroscopy, and fiber optic sensing to measure plant traits and monitor shoot and root development.",
       "icon": "◉",
       "image": ""
     },
     {
       "title": "Digital Agriculture & Trustworthy AI",
-      "description": "Building AI tools for crop disease and drought monitoring, canopy stress analysis, and potential yield-impact assessment, with an emphasis on robustness and reproducible research.",
+      "description": "Developing robust AI tools for crop disease detection, drought monitoring, and potential yield-impact assessment.",
       "icon": "♧",
       "image": ""
     },
     {
-      "title": "Data Science & Modeling",
-      "description": "Predictive analytics and data-driven scientific modeling.",
-      "icon": "▥",
+      "title": "Cybersecurity & Software Engineering",
+      "description": "Developing secure research software and evaluating AI robustness against adversarial attacks.",
+      "icon": "🛡️",
       "image": ""
     }
   ],
