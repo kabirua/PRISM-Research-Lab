@@ -217,7 +217,7 @@ window.LAB_DATA = {
       "description": "Science, Technology and Research (STaR) ",
       "image": "images/start.png",
       "url": "https://wvresearch.org/",
-      "enabled": false
+      "enabled": true
     }
   ]
 };
