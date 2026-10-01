@@ -197,36 +197,5 @@ window.LAB_DATA = {
       "url": ""
     }
   ],
-  "research": [
-    {
-      "title": "LeafyVGG-16: Transfer Learning for Plant Disease Detection with Cyber Risk Analysis",
-      "description": "N. Chiwele, E. Sweeney, and K. Hossain. Preprint available on bioRxiv.",
-      "image": "",
-      "url": "https://www.biorxiv.org/content/10.64898/2026.05.13.724946v1",
-      "linkText": "Read Paper →"
-    },
-    {
-      "title": "Drought-Spec-Net: Early Tomato Drought Detection and Potential Yield-Impact Assessment Using Vis–NIR Data",
-      "description": "Research on spectral drought detection and exploratory potential yield-impact indicators.",
-      "image": "",
-      "url": "https://github.com/PRISM-Research-Lab/Tomato-Drought-Impact-Assessment",
-      "linkText": "Research Code & Resources →"
-    }
-  ],
-  "funders": [
-    {
-      "name": "USDA–NIFA",
-      "description": "Evans–Allen research support",
-      "image": "images/USDA_NIFA.jpeg",
-      "url": "https://www.nifa.usda.gov/",
-      "enabled": true
-    },
-    {
-      "name": "WV StaR",
-      "description": "Science, Technology and Research (STaR) ",
-      "image": "images/star.png",
-      "url": "https://wvresearch.org/",
-      "enabled": true
-    }
-  ]
+  "research": window.LAB_RESEARCH,
 };
