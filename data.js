@@ -139,7 +139,7 @@ window.LAB_DATA = {
       "name": "Dr. Kabir Hossain",
       "role": "Principal Investigator",
       "group": "Principal Investigator",
-      "description": "Assistant Professor of Computer Science West Virginia State University",
+      "description": "Assistant Professor of Computer Science, West Virginia State University",
       "image": "images/kabir.jpg",
       "initials": "KH",
       "year": "",
