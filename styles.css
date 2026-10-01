@@ -319,3 +319,17 @@ time { display:block; color:var(--muted); font-size:12px; }
 .publication-image { width:180px; max-width:100%; height:110px; object-fit:cover; border-radius:6px; margin-bottom:12px; }
 @media(max-width:720px) { .news-items { grid-template-columns:1fr; } }
 .publication-image img { width:100%; height:100%; object-fit:cover; }
+/* Prevent uploaded images from expanding cards or funding containers. */
+.grid > *, .hero-layout > *, .news-layout > * { min-width: 0; }
+.card-art { min-width: 0; overflow: hidden; }
+.card-art img { display: block; min-width: 0; max-width: 100%; flex: 0 1 100%; }
+.research-icon img, .resource-card .icon img { display: block; max-width: 100%; margin: 0 auto; }
+.person-avatar { flex-shrink: 0; overflow: hidden; }
+.person-avatar img { display: block; min-width: 0; }
+.publication-image { overflow: hidden; }
+.publication-image img { display: block; max-width: 100%; }
+.funder-list { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
+.funder { width: 230px; max-width: 100%; min-width: 0; }
+.funder > a, .funder > a > div { display: block; width: 100%; min-width: 0; }
+.funder img { display: block; width: 100%; max-width: 230px; height: 90px; object-fit: contain; }
+.funder small { max-width: 100%; overflow-wrap: anywhere; }
