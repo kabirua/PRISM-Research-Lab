@@ -26,7 +26,8 @@ window.LAB_DATA = {
       "date": "",
       "title": "Research update",
       "description": "Explore our tomato drought assessment code and RGB masks.",
-      "url": "https://github.com/PRISM-Research-Lab/Tomato-Drought-Impact-Assessment"
+      "url": "https://github.com/PRISM-Research-Lab/Tomato-Drought-Impact-Assessment",
+      "linkText": "Github link →"
     },
     {
       "date": "",
