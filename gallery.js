@@ -1,7 +1,13 @@
 (() => {
   "use strict";
 
-  const photos = window.LAB_GALLERY || [];
+  const photos = [...(window.LAB_GALLERY || [])].sort((a, b) => {
+    const dateA = a.date || "";
+    const dateB = b.date || "";
+
+    return dateB.localeCompare(dateA);
+  });
+
   const preview = document.getElementById("gallery-preview");
   const target = preview || document.getElementById("gallery-list");
 
