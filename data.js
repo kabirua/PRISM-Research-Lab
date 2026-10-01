@@ -68,7 +68,7 @@ window.LAB_DATA = {
       "description": "Vis–NIR modeling for drought detection, alongside independent RGB canopy stress analysis.",
       "icon": "🌱",
       "color": "green",
-      "image": "images/tomato-project.jpg",
+      "image": "images/tomato-project.JPG",
       "url": "https://github.com/PRISM-Research-Lab/Tomato-Drought-Impact-Assessment",
       "linkText": "Explore Code →"
     },
