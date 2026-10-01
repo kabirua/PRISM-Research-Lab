@@ -31,6 +31,11 @@ window.LAB_GALLERY = [
      image: "images/gallery/PIRM_Lab_IconV1.png",
      caption: "PRISM Lab Icon — Variant 1.",
      date: "2026-10-01"
+   }, 
+  {
+     image: "images/gallery/Greenhouse_Data_Collection_2026.jpg",
+     caption: "Greenhouse Data Collection — Summer 2026.",
+     date: "2026-10-02"
    }
   
   // Add more entries separated by commas.
