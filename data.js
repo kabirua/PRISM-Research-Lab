@@ -98,6 +98,14 @@ window.LAB_DATA = {
     }
   ],
   "resources": [
+        {
+      "title": "Lab GitHub",
+      "description": "Browse our repositories, documentation, and research tools.",
+      "icon": "🔗",
+      "image": "",
+      "url": "https://github.com/PRISM-Research-Lab",
+      "linkText": "Visit GitHub →"
+    }, 
     {
       "title": "Data & Masks",
       "description": "RGB segmentation masks and dataset information.",
@@ -121,14 +129,6 @@ window.LAB_DATA = {
       "image": "",
       "url": "https://github.com/PRISM-Research-Lab/ilastik-mask-creation-tutorial",
       "linkText": "View Tutorial →"
-    },
-    {
-      "title": "Lab GitHub",
-      "description": "Browse our repositories, documentation, and research tools.",
-      "icon": "🔗",
-      "image": "",
-      "url": "https://github.com/PRISM-Research-Lab",
-      "linkText": "Visit GitHub →"
     }
   ],
   "people": [
