@@ -147,7 +147,7 @@ window.LAB_DATA = {
           "linkText": "View CV →"
         },
         {
-          "url": "https://YOUR-PERSONAL-WEBSITE-URL",
+          "url": "https://sites.google.com/view/hossaink/kabir",
           "linkText": "Personal Website →"
         }
       ]
