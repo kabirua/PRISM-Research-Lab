@@ -82,6 +82,15 @@ window.LAB_DATA = {
       "linkText": "Ask About This Research →"
     },
     {
+      "title": "RGB Traits & Biomass",
+      "description": "Developing image datasets to explore relationships between canopy traits, drought stress, and biomass.",
+      "icon": "📊",
+      "color": "gold",
+      "image": "images/biomass.png",
+      "url": "#contact",
+      "linkText": "Discuss Collaboration →"
+    },
+    {
       "title": "Robust Plant Disease AI",
       "description": "Transfer learning for plant disease classification with adversarial risk analysis.",
       "icon": "🛡️",
@@ -89,15 +98,6 @@ window.LAB_DATA = {
       "image": "",
       "url": "https://www.biorxiv.org/content/10.64898/2026.05.13.724946v1",
       "linkText": "Read Preprint →"
-    },
-    {
-      "title": "RGB Traits & Biomass",
-      "description": "Developing image datasets to explore relationships between canopy traits, drought stress, and biomass.",
-      "icon": "📊",
-      "color": "gold",
-      "image": "",
-      "url": "#contact",
-      "linkText": "Discuss Collaboration →"
     }
   ],
   "resources": [
