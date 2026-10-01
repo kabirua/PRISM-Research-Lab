@@ -39,7 +39,7 @@ window.LAB_DATA = {
   "areas": [
     {
       "title": "AI & Computer Vision",
-      "description": "Developing machine learning and deep learning methods for image segmentation, disease detection, visual tracking, and reliable analysis of imaging and spectral data.",
+      "description": "Developing AI methods for image and spectral analysis across agriculture, healthcare, and infrastructure applications.",
       "icon": "🧠",
       "image": ""
     },
