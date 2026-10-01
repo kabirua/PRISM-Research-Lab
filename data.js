@@ -219,5 +219,12 @@ window.LAB_DATA = {
       "url": "https://www.nsf.gov/",
       "enabled": false
     }
+    {
+      "name": "WV StaR",
+      "description": "Science, Technology and Research (STaR) ",
+      "image": "images/star.png",
+      "url": "https://wvresearch.org/",
+      "enabled": true
+    }
   ]
 };
