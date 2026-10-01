@@ -38,39 +38,27 @@ window.LAB_DATA = {
   ],
   "areas": [
     {
-      "title": "Artificial Intelligence",
-      "description": "Machine learning, deep learning, and intelligent systems.",
-      "icon": "◎",
+      "title": "AI & Computer Vision",
+      "description": "Developing machine learning and deep learning methods for image segmentation, disease detection, visual tracking, and reliable analysis of imaging and spectral data.",
+      "icon": "🧠",
       "image": ""
     },
     {
-      "title": "Computer Vision",
-      "description": "Image classification, segmentation, and visual analysis.",
+      "title": "Intelligent Sensing & Plant Phenotyping",
+      "description": "Combining UAV imaging, RGB and thermal cameras, Vis–NIR spectroscopy, and fiber optic sensors to measure plant traits and monitor above- and below-ground development.",
       "icon": "◉",
       "image": ""
     },
     {
-      "title": "Intelligent Sensing",
-      "description": "UAV, spectral, thermal, and multimodal sensing.",
-      "icon": "⌁",
-      "image": ""
-    },
-    {
-      "title": "Trustworthy AI",
-      "description": "Robustness, explainability, and adversarial risk analysis.",
-      "icon": "◇",
+      "title": "Digital Agriculture & Trustworthy AI",
+      "description": "Building AI tools for crop disease and drought monitoring, canopy stress analysis, and potential yield-impact assessment, with an emphasis on robustness and reproducible research.",
+      "icon": "♧",
       "image": ""
     },
     {
       "title": "Data Science & Modeling",
       "description": "Predictive analytics and data-driven scientific modeling.",
       "icon": "▥",
-      "image": ""
-    },
-    {
-      "title": "Digital Agriculture",
-      "description": "AI for plant health, phenotyping, and crop monitoring.",
-      "icon": "♧",
       "image": ""
     }
   ],
