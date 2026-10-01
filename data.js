@@ -218,7 +218,7 @@ window.LAB_DATA = {
       "image": "images/nsf.png",
       "url": "https://www.nsf.gov/",
       "enabled": false
-    }
+    },
     {
       "name": "WV StaR",
       "description": "Science, Technology and Research (STaR) ",
