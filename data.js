@@ -148,7 +148,7 @@ window.LAB_DATA = {
       "role": "Undergraduate",
       "group": "Current Students",
       "description": "Plant disease detection and trustworthy AI.",
-      "image": "",
+      "image": "images/kabir.jpg",
       "initials": "NC",
       "year": "",
       "position": "",
