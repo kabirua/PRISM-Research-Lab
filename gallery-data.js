@@ -4,7 +4,7 @@ window.LAB_GALLERY = [
   //
    {
      image: "images/gallery/PRISM_Lab_Full_Logo_Dark_CoverV1.png",
-     caption: "PRISM_Lab_Full_Logo_Dark_CoverV1.",
+     caption: "PRISM Lab Logo — Variant 1.",
      date: "2026-10-01"
    },
   
