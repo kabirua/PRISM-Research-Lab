@@ -208,7 +208,7 @@ window.LAB_DATA = {
     {
       "name": "USDA–NIFA",
       "description": "Evans–Allen research support",
-      "image": "images/USDA_NIFA.jpeg",
+      "image": "images/USDA_NIFA.JPEG",
       "url": "https://www.nifa.usda.gov/",
       "enabled": true
     },
