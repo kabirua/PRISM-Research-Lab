@@ -331,7 +331,15 @@ time { display:block; color:var(--muted); font-size:12px; }
 .funder-list { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
 .funder { width: 230px; max-width: 100%; min-width: 0; }
 .funder > a, .funder > a > div { display: block; width: 100%; min-width: 0; }
-.funder img {width: 230px; max-width: 100%; height: 130px; padding: 12px; object-fit: contain;}
+.funder img {
+  display: block;
+  width: 230px;
+  max-width: 100%;
+  height: auto;
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+}
 .funder small { max-width: 100%; overflow-wrap: anywhere; }
 .funder img {background: transparent;padding: 0;}
 
