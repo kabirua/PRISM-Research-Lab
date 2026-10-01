@@ -95,7 +95,7 @@ window.LAB_DATA = {
       "description": "Transfer learning for plant disease classification with adversarial risk analysis.",
       "icon": "🛡️",
       "color": "purple",
-      "image": "",
+      "image": "images/disease_leaf.png",
       "url": "https://www.biorxiv.org/content/10.64898/2026.05.13.724946v1",
       "linkText": "Read Preprint →"
     }
