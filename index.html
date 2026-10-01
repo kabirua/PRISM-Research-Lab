@@ -59,7 +59,6 @@
       <div class="container hero-layout">
         <div>
           <div class="eyebrow">West Virginia State University</div>
-
           <h1>PRISM LAB</h1>
 
           <div class="subtitle">
@@ -80,7 +79,6 @@
         </div>
 
         <div class="hero-art">
-          <!-- Built-in vector illustration; no image upload needed. -->
           <svg viewBox="0 0 650 380" role="img"
                aria-labelledby="prism-title">
             <title id="prism-title">
@@ -146,7 +144,6 @@
             LATEST NEWS
             <a href="news.html">View all news →</a>
           </div>
-
           <div id="news-list" class="news-items"></div>
         </div>
       </div>
@@ -211,7 +208,6 @@
       </div>
     </section>
 
-    <!-- Homepage gallery -->
     <section id="gallery" class="soft">
       <div class="container">
         <h2 class="section-title">Lab Gallery</h2>
@@ -305,7 +301,16 @@
   </main>
 
   <footer>
-    <div class="container footer-layout">
+    <!-- Funding logos first -->
+    <div class="container funding"
+         style="border-top: 0; margin-top: 0; padding-top: 0;">
+      <h2>Research Support</h2>
+      <div id="funder-list" class="funder-list"></div>
+    </div>
+
+    <!-- Lab details and copyright at the bottom -->
+    <div class="container footer-layout"
+         style="border-top: 1px solid #293649; margin-top: 28px; padding-top: 24px;">
       <div>
         <strong>PRISM LAB</strong>
         <p>Predictive Research in Intelligent Systems &amp; Modeling</p>
@@ -315,11 +320,6 @@
       <div>
         <a href="#home">Back to Top ↑</a>
       </div>
-    </div>
-
-    <div class="container funding">
-      <h2>Research Support</h2>
-      <div id="funder-list" class="funder-list"></div>
     </div>
   </footer>
 
