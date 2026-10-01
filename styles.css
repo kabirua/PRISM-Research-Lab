@@ -638,4 +638,22 @@ footer a { color: #72caff; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+} 
+/* Spread four research areas across the full container */
+#areas-list {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
 }
+
+@media (max-width: 1000px) {
+  #areas-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  #areas-list {
+    grid-template-columns: 1fr;
+  }
+}
+
