@@ -78,7 +78,7 @@ window.LAB_DATA = {
       "icon": "🌱",
       "color": "sky",
       "image": "images/root_phenotyping.png",
-      "url": "#contact",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.22.753535v1",
       "linkText": "View related preprint →"
     },
     {
