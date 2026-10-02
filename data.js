@@ -207,6 +207,17 @@ window.LAB_DATA = {
       "year": "",
       "position": "",
       "url": ""
+    },
+    {
+      "name": "Dr. Aniruddha Maiti",
+      "role": "Collaborator",
+      "group": "Researchers & Collaborators",
+      "description": "Assistant Professor of Computer Science, West Virginia State University.",
+      "image": "images/Aniruddha_Maiti.jpg",
+      "initials": "KK",
+      "year": "",
+      "position": "",
+      "url": ""
     }
   ],
   "research": window.LAB_RESEARCH,
