@@ -168,10 +168,10 @@ window.LAB_DATA = {
       "name": "Natwange Chiwele",
       "role": "Undergraduate Research Assistant",
       "group": "Current Students",
-      "description": "Computer Science undergraduate student at West Virginia State University (WVSU), researching plant disease detection and trustworthy AI..",
+      "description": "Computer Science undergraduate student at West Virginia State University (WVSU), researching plant disease detection and trustworthy AI.",
       "image": "",
       "initials": "NC",
-      "year": "",
+      "year": "2026",
       "position": "",
       "url": ""
     },
@@ -198,12 +198,12 @@ window.LAB_DATA = {
       "url": ""
     },
     {
-      "name": "Kiruthika",
+      "name": "Kiruthika Kotteeswaran",
       "role": "Researcher",
       "group": "Researchers & Collaborators",
-      "description": "Conducting research on AI and data-driven agriculture.",
+      "description": "Computer Science graduate conducting research on AI and data-driven agriculture at West Virginia State University.",
       "image": "",
-      "initials": "K",
+      "initials": "KK",
       "year": "",
       "position": "",
       "url": ""
