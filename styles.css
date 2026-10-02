@@ -553,6 +553,7 @@ footer a { color: #72caff; }
 
 .funder small {
   color: #cbd5e6;
+  font-size: 16px;
   max-width: 100%;
   overflow-wrap: anywhere;
 }
