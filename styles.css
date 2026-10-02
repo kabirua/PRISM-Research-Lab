@@ -18,6 +18,7 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
   color: var(--text);
   line-height: 1.65;
   background: white;
@@ -93,7 +94,7 @@ header {
 .desktop-links a,
 .mobile-menu a {
   color: white;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: bold;
 }
 
@@ -170,7 +171,7 @@ h1 {
   background: var(--blue);
   border: 1px solid var(--blue);
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -199,7 +200,7 @@ section { padding: 55px 0; }
   margin: 0 0 30px;
   text-align: center;
   color: var(--navy);
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .section-title::after {
@@ -243,12 +244,12 @@ section { padding: 55px 0; }
 
 .research-item h3 {
   color: var(--blue);
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.4;
 }
 
 .research-item p {
-  font-size: 13px;
+  font-size: 18px;
   color: var(--muted);
 }
 
@@ -299,17 +300,17 @@ section { padding: 55px 0; }
 .card-body { padding: 22px; }
 
 .card h3 {
-  font-size: 17px;
+  font-size: 20px;
   margin: 0 0 10px;
 }
 
 .card p {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .card a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -331,13 +332,13 @@ section { padding: 55px 0; }
 .news-label {
   color: var(--blue);
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .news-label a {
   display: block;
   margin-top: 12px;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .news-items {
@@ -348,13 +349,13 @@ section { padding: 55px 0; }
 
 .news-items p {
   margin: 0;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 time {
   display: block;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* Resources and people */
@@ -376,7 +377,7 @@ time {
 
 .person-role {
   color: var(--blue);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -412,7 +413,7 @@ time {
 
 .publication h3 {
   margin: 0 0 8px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .publication p {
@@ -508,7 +509,7 @@ footer {
 
 footer p {
   margin: 5px 0;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 footer a { color: #72caff; }
@@ -522,7 +523,7 @@ footer a { color: #72caff; }
 
 .funding h2 {
   color: white;
-  font-size: 17px;
+  font-size: 20px;
   margin: 0 0 18px;
 }
 
@@ -570,7 +571,7 @@ footer a { color: #72caff; }
 /* Responsive layout */
 @media (max-width: 1000px) {
   .desktop-links { gap: 12px; }
-  .desktop-links a { font-size: 12px; }
+  .desktop-links a { font-size: 15px; }
   .grid-six { grid-template-columns: repeat(3, 1fr); }
   .grid-four { grid-template-columns: repeat(2, 1fr); }
 }
@@ -638,7 +639,8 @@ footer a { color: #72caff; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-} 
+}
+
 /* Spread four research areas across the full container */
 #areas-list {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -656,4 +658,3 @@ footer a { color: #72caff; }
     grid-template-columns: 1fr;
   }
 }
-
