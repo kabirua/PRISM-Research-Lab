@@ -214,7 +214,7 @@ window.LAB_DATA = {
       "group": "Researchers & Collaborators",
       "description": "Assistant Professor of Computer Science, West Virginia State University.",
       "image": "images/Aniruddha_Maiti.jpg",
-      "initials": "KK",
+      "initials": "AM",
       "year": "",
       "position": "",
       "url": ""
