@@ -73,6 +73,15 @@ window.LAB_DATA = {
       "linkText": "Explore Code →"
     },
     {
+      "title": "Non-Destructive Root Phenotyping",
+      "description": "Investigating fiber sensing and AI for monitoring root growth without digging up plants.",
+      "icon": "🌱",
+      "color": "sky",
+      "image": "images/root_phenotyping.png",
+      "url": "#contact",
+      "linkText": "View related preprint →"
+    },
+    {
       "title": "UAV Crop Monitoring",
       "description": "Computer vision and aerial imaging for crop health monitoring and plant disease detection.",
       "icon": "🛩️",
