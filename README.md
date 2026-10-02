@@ -2,7 +2,8 @@
 
 Website for **PRISM Lab — Predictive Research in Intelligent Systems & Modeling** at West Virginia State University.
 
-**Live website:** https://kabirua.github.io/PRISM-Research-Lab/
+**Live website:** https://myprismlab.com/
+**Domain purchased from Namecheap on October 1, 2026. It will auto renew on October 2, 2029.**
 
 ## Upload to GitHub
 
