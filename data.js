@@ -201,7 +201,7 @@ window.LAB_DATA = {
       "name": "Kiruthika Kotteeswaran",
       "role": "Researcher",
       "group": "Researchers & Collaborators",
-      "description": "Computer Science graduate conducting research on AI and data-driven agriculture at West Virginia State University.",
+      "description": "Computer Science graduate conducting research on AI and data-driven agriculture in our lab at West Virginia State University.",
       "image": "",
       "initials": "KK",
       "year": "",
