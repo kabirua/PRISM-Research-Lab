@@ -210,9 +210,9 @@ window.LAB_DATA = {
     },
     {
       "name": "Dr. Aniruddha Maiti",
-      "role": "Collaborator",
+      "role": "Faculty Collaborator",
       "group": "Researchers & Collaborators",
-      "description": "Assistant Professor of Computer Science, West Virginia State University.",
+      "description": "Assistant Professor of Computer Science, West Virginia State University, specializing in large language models (LLMs).",
       "image": "images/Aniruddha_Maiti.jpg",
       "initials": "AM",
       "year": "",
