@@ -39,8 +39,8 @@ window.LAB_GALLERY = [
    }, 
   {
      image: "images/gallery/ghtc_presentration.jpg",
-     caption: "Greenhouse Data Collection — Summer 2026.",
-     date: "2026-10-02"
+     caption: "Presenting our LeafyVGG-16 paper at IEEE GHTC 2026.",
+     date: "2026-10-09"
    }
   
   // Add more entries separated by commas.
