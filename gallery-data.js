@@ -36,6 +36,11 @@ window.LAB_GALLERY = [
      image: "images/gallery/Greenhouse_Data_Collection_2026.JPG",
      caption: "Greenhouse Data Collection — Summer 2026.",
      date: "2026-10-02"
+   }, 
+  {
+     image: "images/gallery/ghtc_presentration.jpg",
+     caption: "Greenhouse Data Collection — Summer 2026.",
+     date: "2026-10-02"
    }
   
   // Add more entries separated by commas.
