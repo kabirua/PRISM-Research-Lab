@@ -37,6 +37,11 @@ window.LAB_GALLERY = [
      caption: "Greenhouse Data Collection — Summer 2026.",
      date: "2026-10-02"
    }, 
+    {
+     image: "images/gallery/PIMSMLB_QR_CODE.png",
+     caption: "PIMSMLB Quick Response Code.",
+     date: "2026-10-19"
+   },
   {
      image: "images/gallery/ghtc_presentration.jpg",
      caption: "Presenting our LeafyVGG-16 paper at IEEE GHTC 2026.",
