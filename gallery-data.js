@@ -39,7 +39,7 @@ window.LAB_GALLERY = [
    }, 
     {
      image: "images/gallery/PIMSMLB_QR_CODE.png",
-     caption: "PRISM LAB QRC.",
+     caption: "PRISM LAB QR Code.",
      date: "2026-10-19"
    },
   {
